@@ -52,7 +52,7 @@ function App() {
           <p className="text-base leading-relaxed text-gray-900 dark:text-gray-100">
             I am Paulo Victor da Costa Vilarins, a developer passionate about blockchain architecture and dedicated to building the future of Web3. My journey began at the University of Brasília, where I learned from Professor Dr. Cláudia Barenco and developers from CESS.
             <br /><br />
-            This experience gave me a deep understanding of the technology's potential. While amazed by CESS's decentralized storage solution, I grew concerned about the energy resources required to keep nodes running. This inspired my first project, Sununest, a decentralized P2P marketplace for members of an energy community to securely trade solar energy credits.
+            This experience gave me a deep understanding of the technology's potential. While amazed by CESS's decentralized storage solution, I grew concerned about the energy resources required to keep nodes running. This inspired my first project, Sunest, a decentralized P2P marketplace for members of an energy community to securely trade solar energy credits.
             <br /><br />
             Building on this experience, I am currently an intern at Anatel, where I am helping to implement a private blockchain to manage company assets as NFTs. My focus is on creating innovative, secure solutions, and my hobby has become exploring how Web3 can be used to make everyday life easier.
           </p>
@@ -63,7 +63,7 @@ function App() {
             <div className="flex items-start gap-4 mb-6">
               <img src="/img/cess-logo.png" alt="Sununest Logo" className="w-10 h-10" />
               <div>
-                <p className="font-bold text-gray-900 dark:text-white">Sununest</p>
+                <p className="font-bold text-gray-900 dark:text-white">Sunest</p>
                 <p className="text-sm text-gray-600 dark:text-gray-300">Decentralized P2P marketplace for solar energy credits.</p>
               </div>
             </div>
