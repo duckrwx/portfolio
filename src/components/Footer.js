@@ -1,5 +1,4 @@
 import React from 'react';
-import TechTags from './TechTags';
 
 const Footer = () => {
 
