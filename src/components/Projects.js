@@ -2,16 +2,16 @@ import React from 'react';
 
 const projects = [
   {
-    title: 'Sunest',
-    description: 'Decentralized P2P marketplace for solar energy credits.',
-    logo: '/img/sunest.gif',  
-    link: 'https://github.com/duckrwx/sunest',
-  },
-  {
     title: 'Vitrine',
     description: 'Web3 platform where users transform their Browse data into an AI-segmented, anonymous persona, stored on the CESS network.',
-    logo: '/img/nft-logo.jpg', 
+    logo: '/img/sunest.gif', 
     link: 'https://github.com/duckrwx/vitrine-dapp',
+  },
+  {
+    title: 'Sunest',
+    description: 'Decentralized P2P marketplace for solar energy credits.',
+    logo: '/img/cess-logo.png',  
+    link: 'https://github.com/duckrwx/sunest',
   },
 ];
 
