@@ -4,14 +4,14 @@ const projects = [
   {
     title: 'Sunest',
     description: 'Decentralized P2P marketplace for solar energy credits.',
-    logo: '/img/cess-logo.png',
+    logo: '/img/sunest.gif',  
     link: 'https://github.com/duckrwx/sunest',
   },
   {
     title: 'Vitrine',
-    description: 'Web3 platform where users transform their browsing data into an AI-segmented, anonymous persona, stored on the CESS network.',
-    logo: '/img/nft-logo.jpg',
-    link: 'https://github.com/duckrwx/vitrine-dapp', 
+    description: 'Web3 platform where users transform their Browse data into an AI-segmented, anonymous persona, stored on the CESS network.',
+    logo: '/img/nft-logo.jpg', 
+    link: 'https://github.com/duckrwx/vitrine-dapp',
   },
 ];
 
@@ -28,12 +28,20 @@ const Projects = () => {
             href={project.link}
             target="_blank"
             rel="noopener noreferrer"
-            className="group grid md:grid-cols-4 gap-4 transition-all duration-300 ease-in-out hover:!opacity-100 group-hover/list:opacity-50 p-4 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800/50"
+            // Layout alterado para ser uma coluna única
+            className="group flex flex-col gap-4 transition-all duration-300 ease-in-out hover:!opacity-100 group-hover/list:opacity-50 p-4 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800/50"
           >
-            <div className="md:col-span-1">
-              <img src={project.logo} alt={`${project.title} Logo`} className="w-16 h-16 rounded-md border-2 border-gray-200 dark:border-gray-700" />
+            {/* O GIF agora ocupa a largura total */}
+            <div className="w-full">
+              <img
+                src={project.logo}
+                alt={`${project.title} Demo`}
+                // Usando a classe aspect-video para manter a proporção e w-full para ocupar a largura
+                className="w-full h-auto aspect-video object-cover rounded-md border-2 border-gray-200 dark:border-gray-700"
+              />
             </div>
-            <div className="md:col-span-3">
+            
+            <div className="flex-1">
               <h4 className="font-bold text-lg text-gray-800 dark:text-white group-hover:text-blue-500 dark:group-hover:text-blue-400">
                 {project.title}
               </h4>
