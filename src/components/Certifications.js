@@ -23,11 +23,15 @@ const certifications = [
     tags: ['Decentralized Storage', 'WASM', 'EVM', 'Ink\!', 'Solidity'],
   },
   {
-    title: 'Projeto ILIADA Blockchain introdution, Web3 and Rollups in progress',
+    title: 'Projeto ILIADA Blockchain introdution, Web3 and Rollups',
     description: 'This course provides end-to-end training in dApp development, covering Web3 fundamentals, developer tools (Linux, Docker, React), and advanced topics like Smart Contracts (Solidity/Vyper) and Layer-2 Rollups. The curriculum culminates in a hands-on project building a complete decentralized application with the Cartesi Rollups SDK.',
     tags: ['dApp Development', 'Web3', 'Rollups', 'Cartesi', 'Smart Contracts'],
   },
-
+  {
+    title: 'Polkadot Blockchain Formation',
+    description: 'This course provides end-to-end training in dApp development, covering Web3 fundamentals, developer tools (Linux, Docker, React), and advanced topics like Smart Contracts (Solidity/Vyper) and Layer-2 Rollups. The curriculum culminates in a hands-on project building a complete decentralized application with the Cartesi Rollups SDK.',
+    tags: ['dApp', 'Web3', 'Rust', 'WebAssembly', 'ink!'],
+  },
 ];
 
 const Certifications = () => {
