@@ -29,7 +29,7 @@ const certifications = [
   },
   {
     title: 'Polkadot Blockchain Formation',
-    description: 'This course provides end-to-end training in dApp development, covering Web3 fundamentals, developer tools (Linux, Docker, React), and advanced topics like Smart Contracts (Solidity/Vyper) and Layer-2 Rollups. The curriculum culminates in a hands-on project building a complete decentralized application with the Cartesi Rollups SDK.',
+    description: 'Blockchain Development with Polkadot SDK: A comprehensive course focused on building custom parachains with Rust. Key skills include: Substrate and FRAME for runtime development, Wasm smart contracts, and XCM for cross-chain interoperability. The course culminated in a final project to build and deploy a fully functional, interoperable blockchain application.',
     tags: ['dApp', 'Web3', 'Rust', 'WebAssembly', 'ink!'],
   },
 ];
