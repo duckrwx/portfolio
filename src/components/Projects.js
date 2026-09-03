@@ -1,35 +1,16 @@
 import React from 'react';
 import TechTags from './TechTags';
-
-const projects = [
-  {
-    title: 'CFTV-BTC — Verifiable Video Custody on Bitcoin',
-    description: 'A verifiable custody chain for CCTV footage anchored on Bitcoin: video is segmented, hashed (SHA-256), packaged into signed BagIt manifests, and later verified against an on-chain anchor to prove integrity and detect tampering. Academic project at UnB and the likely basis for my final thesis — read the published article for the full write-up.',
-    link: 'https://cftv.vilarins.com',
-    tags: ['Bitcoin', 'OpenTimestamps', 'Python', 'Digital Forensics', 'SHA-256'],
-  },
-  {
-    title: 'Polka-Scope',
-    description: 'Smart P2P monitoring and slash-prevention for Polkadot/Substrate validators, written in Rust and formally verified with TLA+. It tracks peer connectivity and network health to catch issues before they cause slashing events — bridging network engineering with Web3 infrastructure.',
-    link: 'https://github.com/duckrwx/polka-scope',
-    tags: ['Rust', 'Polkadot', 'TLA+', 'Formal Verification', 'P2P'],
-  },
-  {
-    title: 'Guardian Gateway',
-    description: 'A sovereign-identity gateway for parental authorization built on Brazil\'s Gov.br OIDC. Features an O(1) state machine, a hash-chained audit log for non-repudiation, and a REST API for integration with games and digital platforms.',
-    link: 'https://github.com/duckrwx/guardian-gateway',
-    tags: ['Identity', 'OIDC', 'Gov.br', 'Rust', 'REST API'],
-  },
-];
+import { useLanguage } from '../LanguageContext';
 
 const Projects = () => {
+  const { t } = useLanguage();
   return (
     <section id="projects" className="scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24">
       <h3 className="text-lg font-bold uppercase tracking-widest text-blue-600 dark:text-blue-400 mb-8">
-        Projects
+        {t.sections.projects}
       </h3>
       <div className="flex flex-col gap-12">
-        {projects.map((project, index) => (
+        {t.projects.map((project, index) => (
           <a
             key={index}
             href={project.link}

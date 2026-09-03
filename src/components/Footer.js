@@ -1,7 +1,8 @@
 import React from 'react';
+import { useLanguage } from '../LanguageContext';
 
 const Footer = () => {
-
+  const { t } = useLanguage();
   return (
     <footer className="mt-16 text-center text-sm text-gray-500 dark:text-gray-400">
       <div className="mb-8">
@@ -10,7 +11,7 @@ const Footer = () => {
           href="/cv/PauloVictorCV.pdf"
           download
         >
-          Download CV
+          {t.footer.cta}
         </a>
       </div>
     </footer>

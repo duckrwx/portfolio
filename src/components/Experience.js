@@ -1,39 +1,17 @@
 import React from 'react';
 import TechTags from './TechTags';
-
-const experience = [
-  {
-    title: 'Monitor — Smart Contract Programming (Extension Course) @ University of Brasília (UnB)',
-    description: 'Teaching assistant for the university extension course on Smart Contract Programming (Dept. of Electrical Engineering). I support students through chat and Google Classroom across the EVM, Solidity, OpenZeppelin, security and lifecycle patterns (proxies, Ownable/RBAC, circuit breakers), ERC-20/ERC-721, and testnet deployment (Sepolia, Etherscan, MetaMask).',
-    link: 'https://www.unb.br/',
-    time: '2026',
-    tags: ['Solidity', 'Smart Contracts', 'EVM', 'Teaching'],
-  },
-  {
-    title: 'Anatel',
-    description: 'Manage records and configure tools such as Zabbix, Grafana. Maintained weekly communication with ANATEL state-level superintendencies, supporting coordination, data sharing, and resolution of regional network demands.',
-    link: 'https://www.gov.br/anatel/pt-br',
-    time: '2025 - Present',
-    tags: ['Communication', 'DevOps', 'Monitoring'],
-  },
-  {
-    title: 'Telebras',
-    description: 'Manage records and configure tools such as Centreon, Cacti, Zabbix, Grafana, FortiGate (FortiManager and FortiAnalyzer). Monitor dashboards and logs to ensure system health and performance.',
-    link: 'https://www.telebras.com.br/',
-    time: '2022 - 2024',
-    tags: ['DevOps', 'Monitoring', 'Network'],
-  },
-];
+import { useLanguage } from '../LanguageContext';
 
 const Experience = () => {
+  const { t } = useLanguage();
   return (
     <section id="experience" className="scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24">
       <h3 className="text-lg font-bold uppercase tracking-widest text-blue-600 dark:text-blue-400 mb-8">
-        Experience
+        {t.sections.experience}
       </h3>
 
       <div className="flex flex-col gap-12">
-        {experience.map((exp, index) => (
+        {t.experience.map((exp, index) => (
           <a
             key={index}
             href={exp.link}

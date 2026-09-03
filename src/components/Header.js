@@ -1,6 +1,8 @@
 import React from 'react';
+import { useLanguage } from '../LanguageContext';
 
 const Header = () => {
+  const { t } = useLanguage();
   return (
     <header className="lg:sticky lg:top-0 lg:flex lg:max-h-screen lg:w-1/2 lg:flex-col lg:justify-between lg:py-24">
       <div>
@@ -13,10 +15,10 @@ const Header = () => {
           Paulo Victor Vilarins
         </h1>
         <h2 className="mt-3 text-lg font-medium tracking-tight text-gray-800 dark:text-white sm:text-xl">
-          Networks Engineer building verifiable Web3
+          {t.role}
         </h2>
         <p className="mt-4 max-w-xs leading-normal text-gray-600 dark:text-gray-400">
-          Bitcoin-anchored systems, Rust smart contracts, and formally-verified infrastructure.
+          {t.tagline}
         </p>
 
         {/* Smooth Scroll Navigation */}
@@ -26,7 +28,7 @@ const Header = () => {
               <a className="group flex items-center py-2" href="#about">
                 <span className="nav-indicator mr-4 h-px w-8 bg-gray-500 transition-all group-hover:w-16 group-hover:bg-blue-500 dark:group-hover:bg-blue-400"></span>
                 <span className="nav-text text-xs font-bold uppercase tracking-widest text-gray-500 group-hover:text-blue-500 dark:group-hover:text-blue-400">
-                  About
+                  {t.nav.about}
                 </span>
               </a>
             </li>
@@ -34,23 +36,23 @@ const Header = () => {
               <a className="group flex items-center py-2" href="#experience">
                 <span className="nav-indicator mr-4 h-px w-8 bg-gray-500 transition-all group-hover:w-16 group-hover:bg-blue-500 dark:group-hover:bg-blue-400"></span>
                 <span className="nav-text text-xs font-bold uppercase tracking-widest text-gray-500 group-hover:text-blue-500 dark:group-hover:text-blue-400">
-                  Experience
+                  {t.nav.experience}
                 </span>
               </a>
             </li>
-                        <li>
+            <li>
               <a className="group flex items-center py-2" href="#certifications">
                 <span className="nav-indicator mr-4 h-px w-8 bg-gray-500 transition-all group-hover:w-16 group-hover:bg-blue-500 dark:group-hover:bg-blue-400"></span>
                 <span className="nav-text text-xs font-bold uppercase tracking-widest text-gray-500 group-hover:text-blue-500 dark:group-hover:text-blue-400">
-                  Courses & Certifications
+                  {t.nav.certifications}
                 </span>
               </a>
             </li>
-                        <li>
+            <li>
               <a className="group flex items-center py-2" href="#projects">
                 <span className="nav-indicator mr-4 h-px w-8 bg-gray-500 transition-all group-hover:w-16 group-hover:bg-blue-500 dark:group-hover:bg-blue-400"></span>
                 <span className="nav-text text-xs font-bold uppercase tracking-widest text-gray-500 group-hover:text-blue-500 dark:group-hover:text-blue-400">
-                  Projects
+                  {t.nav.projects}
                 </span>
               </a>
             </li>
@@ -71,7 +73,7 @@ const Header = () => {
         </a>
       </div>
     </header>
-   );
+  );
 };
 
 export default Header;
