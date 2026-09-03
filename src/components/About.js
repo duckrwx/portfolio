@@ -4,11 +4,11 @@ const About = () => {
   return (
     <section id="about" className="mb-16 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24">
       <p className="leading-relaxed">
-        I am Paulo Victor da Costa Vilarins, a developer passionate about blockchain architecture and dedicated to building the future of Web3. My journey began at the University of Brasília, where I learned from Professor Dr. Cláudia Barenco and developers from CESS.
+        My path into Web3 started with networks — and with a very Brazilian question: what does it cost to build something reliable when trust itself is scarce and expensive?
         <br /><br />
-        This experience gave me a deep understanding of the technology's potential. While amazed by CESS's decentralized storage solution, I grew concerned about the energy resources required to keep nodes running. This inspired my first project, Sunest, a decentralized P2P marketplace for members of an energy community to securely trade solar energy credits.
+        Studying communication networks engineering at UnB, and spending four years keeping production infrastructure alive — first at Telebras, then at Anatel — taught me to distrust assumptions: to care about what happens when a link drops, when a system is under load, when you can't take it on faith that things are what they claim to be. Where institutional trust is costly and easily broken, that stops being abstract; it's daily life. To me it's also the clearest case for blockchain — not as a buzzword, but as a way to relocate trust from fragile institutions to code and math that anyone can verify.
         <br /><br />
-        Building on this foundational experience, my focus is now on mastering the tools that enable the next generation of decentralized applications. I am actively deepening my expertise in Rust, exploring its power for creating secure and high-performance smart contracts that compile to WebAssembly (Wasm) using frameworks like Ink!. My goal remains the same: to create innovative solutions that leverage Web3 to solve real-world problems and make everyday life easier.
+        So these days I build systems where integrity is proven, not promised — anchoring video custody to Bitcoin so it can't be quietly tampered with, writing Rust for the Polkadot ecosystem, and reaching for formal methods like TLA+ when something is too important to just "probably" work. I care more about durable, honest engineering than buzzwords — and I like passing that on, as a monitor for UnB's smart-contract programming course, because the best way to understand a system is having to explain it.
       </p>
     </section>
   );
