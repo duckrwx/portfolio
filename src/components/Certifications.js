@@ -20,7 +20,7 @@ const certifications = [
   {
     title: 'CESS: Decentralized Data Infrastructure',
     description: 'An in-depth exploration of the CESS network, a decentralized data and value infrastructure. The curriculum covered the fundamentals of blockchain and Web3, the architecture of the CESS network, and its key technologies — with hands-on experience setting up and operating both consensus and storage nodes, using the DeOSS (Decentralized Object Storage) system via its REST API, and building dApps with both Ink! and Solidity, as well as creating custom pallets.',
-    tags: ['Decentralized Storage', 'WASM', 'EVM', 'Ink\!', 'Solidity'],
+    tags: ['Decentralized Storage', 'WASM', 'EVM', 'Ink!', 'Solidity'],
   },
   {
     title: 'CompTIA Security+ (SY0-701)',
