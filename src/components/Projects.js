@@ -4,8 +4,8 @@ import TechTags from './TechTags';
 const projects = [
   {
     title: 'CFTV-BTC — Verifiable Video Custody on Bitcoin',
-    description: 'A verifiable custody chain for CCTV footage anchored on Bitcoin: video is segmented, hashed (SHA-256), packaged into signed BagIt manifests, and later verified against an on-chain anchor to prove integrity and detect tampering. Academic project (UnB) and the likely basis for my final thesis. Published article: cftv.vilarins.cloud',
-    link: 'https://github.com/duckrwx/cftv-onchain',
+    description: 'A verifiable custody chain for CCTV footage anchored on Bitcoin: video is segmented, hashed (SHA-256), packaged into signed BagIt manifests, and later verified against an on-chain anchor to prove integrity and detect tampering. Academic project at UnB and the likely basis for my final thesis — read the published article for the full write-up.',
+    link: 'https://cftv.vilarins.com',
     tags: ['Bitcoin', 'OpenTimestamps', 'Python', 'Digital Forensics', 'SHA-256'],
   },
   {
