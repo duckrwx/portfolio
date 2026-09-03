@@ -13,10 +13,10 @@ const Header = () => {
           Paulo Victor Vilarins
         </h1>
         <h2 className="mt-3 text-lg font-medium tracking-tight text-gray-800 dark:text-white sm:text-xl">
-          Web3 Developer
+          Networks Engineer building verifiable Web3
         </h2>
         <p className="mt-4 max-w-xs leading-normal text-gray-600 dark:text-gray-400">
-          Building the future of the web, one block at a time.
+          Bitcoin-anchored systems, Rust smart contracts, and formally-verified infrastructure.
         </p>
 
         {/* Smooth Scroll Navigation */}

@@ -1,17 +1,24 @@
 import React from 'react';
+import TechTags from './TechTags';
 
 const projects = [
   {
-    title: 'Vitrine',
-    description: 'Web3 platform where users transform their Browse data into an AI-segmented, anonymous persona, stored on the CESS network.',
-    logo: '/img/sunest.gif', 
-    link: 'https://github.com/duckrwx/vitrine-dapp',
+    title: 'CFTV-BTC — Verifiable Video Custody on Bitcoin',
+    description: 'A verifiable custody chain for CCTV footage anchored on Bitcoin: video is segmented, hashed (SHA-256), packaged into signed BagIt manifests, and later verified against an on-chain anchor to prove integrity and detect tampering. Academic project (UnB) and the likely basis for my final thesis. Published article: cftv.vilarins.cloud',
+    link: 'https://github.com/duckrwx/cftv-onchain',
+    tags: ['Bitcoin', 'OpenTimestamps', 'Python', 'Digital Forensics', 'SHA-256'],
   },
   {
-    title: 'Sunest',
-    description: 'Decentralized P2P marketplace for solar energy credits.',
-    logo: '/img/cess-logo.png',  
-    link: 'https://github.com/duckrwx/sunest',
+    title: 'Polka-Scope',
+    description: 'Smart P2P monitoring and slash-prevention for Polkadot/Substrate validators, written in Rust and formally verified with TLA+. It tracks peer connectivity and network health to catch issues before they cause slashing events — bridging network engineering with Web3 infrastructure.',
+    link: 'https://github.com/duckrwx/polka-scope',
+    tags: ['Rust', 'Polkadot', 'TLA+', 'Formal Verification', 'P2P'],
+  },
+  {
+    title: 'Guardian Gateway',
+    description: 'A sovereign-identity gateway for parental authorization built on Brazil\'s Gov.br OIDC. Features an O(1) state machine, a hash-chained audit log for non-repudiation, and a REST API for integration with games and digital platforms.',
+    link: 'https://github.com/duckrwx/guardian-gateway',
+    tags: ['Identity', 'OIDC', 'Gov.br', 'Rust', 'REST API'],
   },
 ];
 
@@ -28,27 +35,15 @@ const Projects = () => {
             href={project.link}
             target="_blank"
             rel="noopener noreferrer"
-            // Layout alterado para ser uma coluna única
-            className="group flex flex-col gap-4 transition-all duration-300 ease-in-out hover:!opacity-100 group-hover/list:opacity-50 p-4 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800/50"
+            className="group flex flex-col gap-2 transition-all duration-300 ease-in-out hover:!opacity-100 group-hover/list:opacity-50 p-4 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800/50"
           >
-            {/* O GIF agora ocupa a largura total */}
-            <div className="w-full">
-              <img
-                src={project.logo}
-                alt={`${project.title} Demo`}
-                // Usando a classe aspect-video para manter a proporção e w-full para ocupar a largura
-                className="w-full h-auto aspect-video object-cover rounded-md border-2 border-gray-200 dark:border-gray-700"
-              />
-            </div>
-            
-            <div className="flex-1">
-              <h4 className="font-bold text-lg text-gray-800 dark:text-white group-hover:text-blue-500 dark:group-hover:text-blue-400">
-                {project.title}
-              </h4>
-              <p className="text-gray-600 dark:text-gray-400 mt-2">
-                {project.description}
-              </p>
-            </div>
+            <h4 className="font-bold text-lg text-gray-800 dark:text-white group-hover:text-blue-500 dark:group-hover:text-blue-400">
+              {project.title}
+            </h4>
+            <p className="text-gray-600 dark:text-gray-400 mt-2">
+              {project.description}
+            </p>
+            <TechTags technologies={project.tags} />
           </a>
         ))}
       </div>

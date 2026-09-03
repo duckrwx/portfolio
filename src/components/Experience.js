@@ -3,6 +3,13 @@ import TechTags from './TechTags';
 
 const experience = [
   {
+    title: 'Monitor — Smart Contract Programming (Extension Course) @ University of Brasília (UnB)',
+    description: 'Teaching assistant for the university extension course on Smart Contract Programming (Dept. of Electrical Engineering). I support students through chat and Google Classroom across the EVM, Solidity, OpenZeppelin, security and lifecycle patterns (proxies, Ownable/RBAC, circuit breakers), ERC-20/ERC-721, and testnet deployment (Sepolia, Etherscan, MetaMask).',
+    link: 'https://www.unb.br/',
+    time: '2026',
+    tags: ['Solidity', 'Smart Contracts', 'EVM', 'Teaching'],
+  },
+  {
     title: 'Anatel',
     description: 'Manage records and configure tools such as Zabbix, Grafana. Maintained weekly communication with ANATEL state-level superintendencies, supporting coordination, data sharing, and resolution of regional network demands.',
     link: 'https://www.gov.br/anatel/pt-br',
